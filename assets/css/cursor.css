@@ -1,0 +1,22 @@
+.no-cursor * {
+    cursor: none !important;
+}
+
+.cursor {
+    position: fixed;
+    z-index: 1000000;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    background-color: gray;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: transform .2s ease-in-out;
+    mix-blend-mode: multiply;
+    transform: scale(0.4);
+}
+
+.cursor--hovered {
+    transform: scale(1);
+}
